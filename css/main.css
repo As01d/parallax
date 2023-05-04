@@ -29,18 +29,18 @@
      position: relative;
  }
 
- .main-header::after {
-     content:'';
-     position: absolute;
-     z-index: 100;
-     width: 100%;
-     height: calc(var(--index) * 10);
-     background-image: url(../img/ground.png);
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-position: center;
-     bottom: -100px;
- }
+    .main-header::after {
+        content: '';
+        position: absolute;
+        z-index: 100;
+        width: 100%;
+        height: calc(var(--index) * 10);
+        background-image: url(../img/ground.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        bottom: calc(var(--index) * -5);
+    }
 
  .layers {
      height: 100vh;
