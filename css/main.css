@@ -6,6 +6,7 @@
 
 :root {
     --index: calc(1vw + 1vh);
+    --text: #e7e7e0;
 }
 
 
@@ -81,7 +82,7 @@
     will-change: transform;
     text-transform: uppercase;
     font-weight:900;
-    color: #e7e7e0;
+    color: var(--text);
     text-shadow: 0 0 15px #f5da8aa3;
 }
 
@@ -99,5 +100,14 @@
 .main-article {
     min-height: 100vh;
     background-size: cover;
-    background-color
+    //background-color:center;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layer__header {
+    text-transform: uppercase;
+    font-size: calc(var(--index) * 1.8);
 }
