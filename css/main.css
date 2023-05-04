@@ -105,10 +105,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    text-align: center;
 }
 
 .main-article__header {
     text-transform: uppercase;
     font-size: calc(var(--index) * 1.8);
     letter-spacing: calc(var(--index) / 7);
+}
+
+.main-article__paragraph {
+    max-width: calc(var(--index) * 30);
+    font-size: calc(var(--index) * 1);
+}
+
+.copy {
+    position:absolute;
+    bottom: calc(var(--index) * 2.5);
+    font-size: calc(var(--index) * .75);
+    opacity: .5;
 }
