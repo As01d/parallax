@@ -75,7 +75,7 @@
 }
 
 .layers__front {
-    transform: translate3d(0, calc(var(--scrollTop)/5.5), 0);
+    transform: translate3d(0, calc(var(--scrollTop)/5.7), 0);
 }
 
 .layer__header {
